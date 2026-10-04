@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #0b0f19;
+    color: #e2e8f0;
+    overflow-x: hidden;
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono);
+  }
+}
+
+/* Custom engineering scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(71, 85, 105, 0.6);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.9);
+}
+
+/* Markdown prose technical styling */
+.tech-prose {
+  color: #cbd5e1;
+  line-height: 1.7;
+}
+
+.tech-prose p {
+  margin-bottom: 0.85rem;
+}
+
+.tech-prose p:last-child {
+  margin-bottom: 0;
+}
+
+.tech-prose strong {
+  color: #f8fafc;
+  font-weight: 600;
+}
+
+.tech-prose ul, .tech-prose ol {
+  margin-top: 0.5rem;
+  margin-bottom: 0.85rem;
+  padding-left: 1.25rem;
+}
+
+.tech-prose ul {
+  list-style-type: disc;
+}
+
+.tech-prose ol {
+  list-style-type: decimal;
+}
+
+.tech-prose li {
+  margin-bottom: 0.35rem;
+}
+
+.tech-prose h1, .tech-prose h2, .tech-prose h3, .tech-prose h4 {
+  color: #f1f5f9;
+  font-weight: 700;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.015em;
+}
+
+.tech-prose code:not(pre code) {
+  background: rgba(30, 41, 59, 0.8);
+  color: #38bdf8;
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.25rem;
+  font-size: 0.875em;
+  border: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+.tech-prose pre {
+  background: #090d16;
+  border: 1px solid #1e293b;
+  border-radius: 0.5rem;
+  padding: 0.875rem 1rem;
+  overflow-x: auto;
+  margin: 0.75rem 0;
+}
+
+.tech-prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.875rem;
+}
+
+.tech-prose th, .tech-prose td {
+  border: 1px solid #1e293b;
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+.tech-prose th {
+  background: #111827;
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+.tech-prose blockquote {
+  border-left: 3px solid #38bdf8;
+  padding-left: 1rem;
+  color: #94a3b8;
+  font-style: italic;
+  margin: 0.75rem 0;
+}

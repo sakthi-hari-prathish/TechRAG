@@ -1,0 +1,6 @@
+{
+  "name": "TechRAG - Technical Document AI Assistant",
+  "description": "AI-powered technical document assistant with RAG-based search, source citations, technical explanation mode, and comprehensive document intelligence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
